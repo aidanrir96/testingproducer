@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHL Producer Briefing Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>NHL Producer Briefing Builder</h1>
+        <p>Official game notes → AI-generated producer briefing + GFX list.</p>
+      </header>
+
+      <section class="panel controls">
+        <div class="field-grid">
+          <label>
+            Away Team
+            <select id="awayTeam"></select>
+          </label>
+
+          <label>
+            Home Team
+            <select id="homeTeam"></select>
+          </label>
+
+          <label>
+            Game Date
+            <input id="gameDate" type="date" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="generateBtn">Generate Briefing + GFX</button>
+          <button id="printBtn" class="secondary">Print GFX List</button>
+        </div>
+
+        <p id="status" class="status"></p>
+      </section>
+
+      <section class="panel output-shell">
+        <div class="tabs">
+          <button class="tab active" data-tab="briefing">Producer Briefing</button>
+          <button class="tab" data-tab="gfx">GFX List</button>
+        </div>
+
+        <div class="output-grid">
+          <article id="briefing" class="output active"></article>
+          <article id="gfx" class="output"></article>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

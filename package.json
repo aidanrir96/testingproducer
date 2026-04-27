@@ -1,0 +1,10 @@
+{
+  "name": "nhl-producer-briefing-app",
+  "version": "1.0.0",
+  "description": "Full-stack app for NHL TV producers to generate briefings and GFX lists from official game notes",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
